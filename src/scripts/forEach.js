@@ -14,7 +14,7 @@ function meuMetodoforEach(array, callback) {
   }
 
   meuMetodoforEach(array, minhaCallBackForEach)
-// console.table(array)
+console.table(array)
 
 
 

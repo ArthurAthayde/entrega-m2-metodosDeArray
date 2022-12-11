@@ -12,4 +12,4 @@ function meuMetodoMap(array, callback){
 }
 
 meuMetodoMap(array, minhaCallBackMap)
-// console.log(numbersMaped);
+console.log(numbersMaped);
