@@ -1,16 +1,17 @@
 array = [1,2,3,4,5]
 
+const initalValue = 0;
 let reduceResult = 0;
 
-const minhaCallBackReduce = element =>{
-reduceResult+= element;
+function minhaCallBackReduce(initalValue, element){
    
 }
 
 function meuMetodoReduce(array, callback){
-  for (let i = 0; i < array.length; i++) {
-    const currentValue = array[i];
-    callback(currentValue);
+  for (let index = 0; index < array.length; index++) {
+    const currentValue = array[index];
+    reduceResult = initalValue + currentValue
+    callback(currentValue, index, array);
   }
 }
 

@@ -2,19 +2,13 @@
 
 array = [1, 2, 3, 4, 5]
 
-function minhaCallBackForIndexOf(element, index, array) {
-    if (element === index) {
-        console.log(index);
-    }
-}
-
-function meuMetodoforIndexOf(array, callback) {
+function meuMetodoforIndexOf(array, element) {
     for (let index = 0; index < array.length; index++) {
         const currentValue = array[index]
-        callback(currentValue, index, array)
+        if(array[index] === element){
+            return index;
+        }     
     }
+    return -1
 }
-
-meuMetodoforIndexOf(array, minhaCallBackForIndexOf)
-
-
+console.log(meuMetodoforIndexOf(array, 2)); 
